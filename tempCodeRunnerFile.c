@@ -1,1 +1,1 @@
-d
+    printf("%d ", dequeue());

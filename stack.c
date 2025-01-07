@@ -4,32 +4,36 @@
 int a[n];
 int i;
 int top=-1;
- 
+
 void push(int value){
     if (top>=n-1)
     {
-        printf("stack is full\n");
+        printf("stack is full");
     }else{
         top++;
         a[top]=value;
     }
+    
 }
+
 void display(){
     if (top==-1)
     {
-     printf("empty\n") ;  
+        printf("empty");
     }else{
-        for (i=0; i<=top; i++)
+        for ( i = 0; i <= top; i++)
         {
-            printf("%d\t",a[i]);
+            printf("%d",a[i]);
         }
         printf("\n");
-    }   
+    }
+    
 }
+
 void pop(){
     if (top==-1)
     {
-        printf("stack is empty\n");
+        printf("stack is empty");
     }else{
         top--;
     }
@@ -37,24 +41,11 @@ void pop(){
 }
 
 int main(){
-    push(1);
-    push(2);
-    push(3);
-    push(4);
-    push(5);
-    push(6);
+    push(10);
+    push(20);
+    push(30);
+    push(40);
     display();
     pop();
     display();
-    pop();
-    display();
-    pop();
-    display();
-    pop();
-    display();
-    pop();
-    display();
-    pop();
-    display();
-
 }
