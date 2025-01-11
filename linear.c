@@ -1,10 +1,10 @@
 #include <stdio.h>
 void search(int a[], int n, int val) {
-    int positions[n];
+    int position[n];
     int count = 0;
     for (int i = 0; i < n; i++) {
         if (a[i] == val) {
-            positions[count++] = i + 1;
+            position[count++] = i + 1;
         }
     }
     if (count == 0) {
@@ -12,7 +12,7 @@ void search(int a[], int n, int val) {
     } else {
         printf("The element %d is found at positions: ", val);
         for (int i = 0; i < count; i++) {
-            printf("%d ", positions[i]);
+            printf("%d ", position[i]);
         }
         printf("\n");
     }

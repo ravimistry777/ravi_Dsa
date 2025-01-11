@@ -3,7 +3,7 @@ int front = -1;
 int rear = -1;
 
 
-void enqueue(int queue[],int x,int n){
+void enqueue(int queue[],int n,int x){
 
 if (front == -1 && rear == -1)
 {
@@ -53,16 +53,16 @@ int main(){
     int n = 5;
     int queue[n];
 
-    enqueue(10,n,queue);
-    enqueue(20,n,queue);
-    enqueue(30,n,queue);
-    enqueue(40,n,queue);
-    enqueue(50,n,queue);
+    enqueue(queue,n,10);
+    enqueue(queue,n,20);
+    enqueue(queue,n,30);
+    enqueue(queue,n,40);
+    enqueue(queue,n,50);
     display(queue,n);
 
     dequeue(queue,n);
     display(queue,n);
 
-    enqueue(60,n,queue);
+    enqueue(queue,n,60);
     display(queue,n);
 }

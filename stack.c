@@ -13,21 +13,16 @@ void push(int value){
         top++;
         a[top]=value;
     }
-    
 }
 
 void display(){
     if (top==-1)
     {
         printf("empty");
-    }else{
-        for ( i = 0; i <= top; i++)
-        {
-            printf("%d",a[i]);
-        }
-        printf("\n");
-    }
-    
+    }for ( i = 0; i <= top; i++)
+    {
+        printf("%d\t",a[i]);
+    }printf("\n");
 }
 
 void pop(){
@@ -37,7 +32,6 @@ void pop(){
     }else{
         top--;
     }
-    
 }
 
 int main(){
@@ -46,6 +40,10 @@ int main(){
     push(30);
     push(40);
     display();
+
+    pop();
+    display();
+
     pop();
     display();
 }
