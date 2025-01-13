@@ -88,10 +88,13 @@ void delete_rear(){
 }
 
 int main(){
+    printf("inserted elements from front side is:- \n");
     insert_front(20);
     insert_front(10);
     insert_front(40);
     display();
+    printf("\n");
+    printf("inserted elements from rear side is:- \n");
     insert_rear(30);
     insert_rear(50);
     insert_rear(80);
