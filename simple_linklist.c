@@ -17,7 +17,7 @@ void insert_end(int val){
 
     if (head == NULL)
     {
-        head = temp;
+        head = temp;             
         return;
     }
     while (ptr->next != NULL)
